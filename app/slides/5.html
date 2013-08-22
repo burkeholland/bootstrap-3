@@ -1,0 +1,59 @@
+<section class="slide slide-padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="block-inner secondary-background"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 center replace">
+        <h1>Responsive Design</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 block">
+        <div class="block-inner secondary-background"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 block">
+        <div class="block-inner primary-background"></div>
+      </div>
+      <div class="col-lg-4 block">
+        <div class="block-inner primary-background"></div>
+      </div>
+      <div class="col-lg-4 block">
+        <div class="block-inner primary-background"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 block">
+        <div class="block-inner primary-background"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 block">
+        <div class="block-inner secondary-background"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  (function() {
+
+    var expand = kendo.fx(".replace").expand("vertical").duration(1000);
+
+    setTimeout(function() {
+      expand.reverse().done(function() {
+        this.find("h1").html("<i class='icon-twitter'></i> Bootstrap 3");
+        setTimeout(function() {
+          expand.play();  
+        }, 200);
+      });
+    });
+
+  }());
+
+</script>

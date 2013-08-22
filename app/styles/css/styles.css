@@ -1,0 +1,110 @@
+/* color pallette */
+body {
+  position: relative;
+}
+.slide {
+  position: relative;
+  display: none;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.slide-padded {
+  padding-top: 50px;
+}
+.slide .block {
+  padding: 10px 10px 10px 0px;
+}
+.slide .block-inner {
+  min-height: 60px;
+  padding: 20px;
+  margin: 5px;
+}
+/* colors scheme */
+.color-1 {
+  color: #d9edf7;
+}
+.color-2 {
+  color: #a8b4b9;
+}
+.color-3 {
+  color: #4783a1;
+}
+.color-4 {
+  color: #fff0de;
+}
+.color-bootstrap-3 {
+  color: #563B7E;
+}
+.background-color-1 {
+  background-color: #d9edf7;
+}
+.background-color-2 {
+  background-color: #a8b4b9;
+}
+.background-color-3 {
+  background-color: #4783a1;
+}
+.background-color-4 {
+  background-color: #fff0de;
+}
+.twitter-logo {
+  color: #00ABF0;
+  font-size: 150px;
+}
+.twitter-img {
+  margin-top: 55px;
+  margin-bottom: 10px;
+}
+.stack {
+  min-height: 500px;
+  max-width: 800px;
+  margin: auto;
+}
+.stack .top {
+  position: absolute;
+}
+.stack .bottom {
+  position: absolute;
+}
+.sans-bullets {
+  list-style: none;
+}
+.tall {
+  min-height: 400px;
+}
+.pixels {
+  font-size: 14px;
+}
+.centered {
+  margin: auto;
+}
+/* bootstrap override for centered responsive images */
+.img-responsive {
+  margin: auto;
+}
+.fixed-navbar-padded {
+  padding-top: 120px;
+}
+@media (max-width: 992px) {
+  .fixed-navbar-padded {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 400px) {
+  .fixed-navbar-padded {
+    padding-top: 50px;
+  }
+}
+.outline {
+  border: 1px solid;
+}
+pre {
+  font-size: 1.5em;
+}
+[contenteditable="true"] > * {
+  font-size: 1em;
+}

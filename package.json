@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap",
+  "title": "Responsive Design With Bootstrap 3",
+  "version": "0.0.0",
+  "description": "A Presentation On Responsive Design With Bootstrap 3",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Burke Holland",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt-contrib-less": "~0.7.0"
+  }
+}
