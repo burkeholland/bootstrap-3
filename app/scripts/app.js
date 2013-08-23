@@ -135,8 +135,10 @@
   window.APP.slides.show = function(e) {
     var $slide, fit;
     $slide = e.view.element;
-    fit = $slide.find(".fit");
-    fit.fitText(fit.data("fit") || 1);
+    fit = $slide.find(".fit").each(function() {
+      return $(this).fitText($(this).data("fit") || 1);
+    });
+    $slide.find(".fitvids").fitVids();
     effectsQueue = $slide.find("[data-effect]");
     return $.publish("/effects/setup", [$slide]);
   };
@@ -158,6 +160,10 @@
   app = new kendo.mobile.Application(document.body, {
     initial: "slide1",
     transition: "fade"
+  });
+
+  $("a").on("click", function(e) {
+    return document.location = e.currentTarget.href;
   });
 
 }).call(this);

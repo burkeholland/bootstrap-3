@@ -52,8 +52,11 @@ window.APP.slides.show = (e) ->
   $slide = e.view.element
 
   # apply fit text to any elements
-  fit = $slide.find(".fit")
-  fit.fitText fit.data("fit") || 1
+  fit = $slide.find(".fit").each ->
+    $(@).fitText $(@).data("fit") || 1
+
+  # apply fitvids to any video containers
+  $slide.find(".fitvids").fitVids()
   
   # track the effects
   effectsQueue = $slide.find "[data-effect]"
@@ -74,7 +77,9 @@ $("[data-role='view']").each ->
 
 app = new kendo.mobile.Application document.body, { initial: "slide1", transition: "fade" }
 
-# kendo.bind "body", viewModel
+# override Kendo UI Mobile busting anchors
+$("a").on "click",  (e) ->
+  document.location = e.currentTarget.href
 
 
 
