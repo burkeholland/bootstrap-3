@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     // Task configuration.
     concat: {
       options: {
-        banner: '<%= banner %>',
+        banner: '<%= banner %> window.APP = {}; window.APP.slides = {};',
         stripBanners: true
       },
       dist: {

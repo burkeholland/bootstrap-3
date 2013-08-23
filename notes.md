@@ -165,5 +165,5 @@ The last thing for us to discuss in terms of the three pieces of responsive desi
 
 Hopefully you are telling the browser the size of your images.  Otherwise the browser has no way of knowing and can't reserve a spot for it.  This will cause your layout to jump.
 
-Have a look at the kitty image which has a fixed size of 500 by 500 pixels.
+Have a look at the kitty image which has a fixed size of 500 by 500 pixels.  In this example, I have added a fixed height and width inline on the element.  As a general rule of thumb, your images should have a specified width.  As it turns out, making images fluid is super easy.  All you have to do is add a width of 100% and set the height to auto.  Done.  Bootstrap does this for you by use of the img-responsive tag.  This is another change from Bootstrap 2.  All images used to be responsive when the responsive css was added.  Now you get to toggle that on and off with just a class.
 
