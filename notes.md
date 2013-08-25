@@ -161,9 +161,15 @@ Pushing a column moves it right, and pulling it moves it left.
 
 ## Responsive Media
 
+### Images
+
 The last thing for us to discuss in terms of the three pieces of responsive design is responsive media.  Generally speaking, this refers to images, but really goes beyond that as we will see here in a minute.  However, images themselves are a big enough challenge, so lets address that first.  Lets look at the way an image behaves on the web.  Usually your image has a fixed size.  Let's go back to our our cute kitty picture.
 
 Hopefully you are telling the browser the size of your images.  Otherwise the browser has no way of knowing and can't reserve a spot for it.  This will cause your layout to jump.
 
 Have a look at the kitty image which has a fixed size of 500 by 500 pixels.  In this example, I have added a fixed height and width inline on the element.  As a general rule of thumb, your images should have a specified width.  As it turns out, making images fluid is super easy.  All you have to do is add a width of 100% and set the height to auto.  Done.  Bootstrap does this for you by use of the img-responsive tag.  This is another change from Bootstrap 2.  All images used to be responsive when the responsive css was added.  Now you get to toggle that on and off with just a class.
+
+### Video
+
+Media doesn't just stop at images though.  And here is where things get tough.  
 
