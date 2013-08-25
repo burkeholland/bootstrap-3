@@ -8,7 +8,8 @@ $(".slide").kendoTouch {
   surface: $(".slide"),
   enableSwipe: true,
   swipe: (e) ->
-    
+    if e.direction == "left" then next()
+    if e.direction == "right" then previous()
 }
 
 previous = ->

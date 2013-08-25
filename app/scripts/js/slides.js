@@ -13,7 +13,14 @@
   $(".slide").kendoTouch({
     surface: $(".slide"),
     enableSwipe: true,
-    swipe: function(e) {}
+    swipe: function(e) {
+      if (e.direction === "left") {
+        next();
+      }
+      if (e.direction === "right") {
+        return previous();
+      }
+    }
   });
 
   previous = function() {
