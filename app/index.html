@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="loading">
 <head>
   <meta charset="UTF-8">
   <title>Responsive Design With Twitter Bootstrap</title>
@@ -1242,6 +1242,13 @@
     </div>
   </div>
 
+  <div data-role="view" class="slide slide-padded center">
+    <div class="container">
+      <div class="row">
+        <h1 class="fit" data-fit="2">Break the wrist and walk away</h1>
+      </div>
+    </div>
+  </div>  
 
   <div data-role="view" class="slide slide-padded center">
     <div class="container">
@@ -1271,10 +1278,6 @@
 
   <div data-role="layout" data-id="slideDeck"></div>
 
-  <div class="splash">
-    <h1>Downloading assets, parsing scripts, ect.  See how long this takes on mobile?</h1>
-  </div>
-
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="vendor/pubsub/tiny.pubsub.js"></script>
   <script src="vendor/fittext/jquery.fittext.js"></script>
@@ -1282,6 +1285,12 @@
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.mobile.min.js"></script>
   <script src="scripts/app.js"></script>
+  
+  <script>
+
+    $("html").removeClass("loading");
+
+  </script>
 
 </body>
 </html>

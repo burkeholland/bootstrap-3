@@ -106,6 +106,4 @@
     return document.location = e.currentTarget.href;
   });
 
-  $(".splash").css("opacity", 0);
-
 }).call(this);

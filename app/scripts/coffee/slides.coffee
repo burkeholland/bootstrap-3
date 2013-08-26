@@ -82,8 +82,5 @@ app = new kendo.mobile.Application document.body, { initial: "slide1", transitio
 $("a").on "click",  (e) ->
   document.location = e.currentTarget.href
 
-# hide the splash screen
-$(".splash").css("opacity", 0)
-
 
 

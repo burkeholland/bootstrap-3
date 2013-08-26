@@ -4,8 +4,20 @@
 @color3: #4783A1;
 @color4: #FFF0DE;
 
+html.loading {
+  transition: opacity 1s ease-in;
+  background: #333 url('/slides/images/spinner.gif') no-repeat 50% 50%;
+}
+
 body {
-  position: relative;
+  -webkit-transition: background-color 0;
+  transition: background-color 0;
+}
+
+html.loading body {
+  -moz-transition: opacity 0;
+  -webkit-transition: opacity 0;
+  opacity: 0;
 }
 
 .center {
@@ -16,23 +28,12 @@ body {
   text-align: left;
 }
 
-.splash {
-  transition: opacity 1s;
-}
-
 .slide-padded {
   padding-top: 50px;
   background-color: white;
 }
 
-// .slide img {
-//   max-height: 500px;
-// }
-
 .slide .block {
-  -moz-transition: opacity 1s;
-  -webkit-transition: opacity 1s;
-  opacity: 0;
   padding: 10px 10px 10px 0px;
 }
 
