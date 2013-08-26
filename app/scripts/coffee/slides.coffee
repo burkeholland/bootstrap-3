@@ -76,11 +76,14 @@ $("[data-role='view']").each ->
   $that.attr "data-stretch", "true"
   idCounter++
 
-app = new kendo.mobile.Application document.body, { initial: "slide1", transition: "fade" }
+app = new kendo.mobile.Application document.body, { initial: "slide1", transition: "fade", webAppCapable: true }
 
 # override Kendo UI Mobile busting anchors
 $("a").on "click",  (e) ->
   document.location = e.currentTarget.href
+
+# hide the splash screen
+$(".splash").css("opacity", 0)
 
 
 

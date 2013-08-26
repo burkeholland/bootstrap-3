@@ -166,12 +166,15 @@
 
   app = new kendo.mobile.Application(document.body, {
     initial: "slide1",
-    transition: "fade"
+    transition: "fade",
+    webAppCapable: true
   });
 
   $("a").on("click", function(e) {
     return document.location = e.currentTarget.href;
   });
+
+  $(".splash").css("opacity", 0);
 
 }).call(this);
 
