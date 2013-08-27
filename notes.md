@@ -8,9 +8,9 @@ This is me and design.  I want to be a designer so bad.  I want to build beatifu
 
 The sad truth of the matter is that I am not a designer, and no amount of trying or wanting is going to make me one.  Just like Kip though, I refuse to give up on my dream.  It does mean though, that I need help.  I need all the help I can get.  Just like Kip though, Even with all the help in the world, I still will never be able to build truly beautiful and original sites.  I will never be a cage fighter.
 
-And that's OK.  If high school drilled into us, it's that you have to know who you are and fully support that person.  That and how to make a beer bong.
+And that's OK.  If high school drilled one thing into us, it's that you have to know who you are and fully support that person.  That and how to make a beer bong.
 
-How many of you find yourselves in the same boat as me?  How many of you don't really care about UI, you just want to get it done.  How many of you work with a designer?
+How many of you find yourselves in the same boat as me?  How many of you don't really care about pixels, but still love UI, and at the end of the day, you just want to get it done.  How many of you work with a designer?
 
 I'm going to throw some names up on the screen and I want you to raise your hand if you recognize any of them.
 
